@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+  background: #f6f7fb;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 35px;
+  width: 100%;
+  padding: 2rem 5rem;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 5px 10px #c7c4c41a;
+}
+
+.tulemuse-pildid {
+  display: flex;
+  gap: 7rem;
+  justify-content: center;
+}
+
+.container.start .kasutaja-tulemus {
+  transform-origin: left;
+  animation: usershake 0.7s ease infinite;
+}
+
+@keyframes usershake {
+    50% {
+        transform: rotate(10deg)
+    }
+}
+
+.container.start .boti-tulemus {
+  transform-origin: right;
+  animation: botShake 0.7s ease infinite;
+}
+@keyframes botShake {
+  50% {
+    transform: rotate(-10deg);
+  }
+}
+
+.tulemuse-pildid img {
+  width: 100px;
+}
+
+.kasutaja-tulemus img {
+  transform: rotate(90deg);
+}
+
+.boti-tulemus img {
+  transform: rotate(-90deg) rotateY(180deg);
+}
+
+.tulemus {
+  text-align: center;
+  font-size: 2rem;
+  color: #181817;
+  margin: 1.5rem 0;
+}
+
+.valik-pilt img {
+  width: 50px;
+}
+
+.valik-pildid {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-top: 2.5rem;
+  justify-content: space-evenly;
+}
+
+.container.start .valik-pildid {
+  pointer-events: none;
+}
+
+.valik-pilt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+.valik-pilt:hover {
+  opacity: 1;
+}
+.valik-pilt.active {
+  opacity: 1;
+}
+.valik-pilt img {
+  pointer-events: none;
+}
+.valik-pilt p {
+  color: #7d2ae8;
+  font-size: 1.235rem;
+  margin-top: 1rem;
+  pointer-events: none;
+}
+/* Responsive media query code for small devices */
+@media (max-width: 768px) {
+  .container {
+    padding: 2rem;
+  }
+  .result_images img {
+    width: 80px;
+  }
+}
+/* Responsive media query code for small devices */
+@media (max-width: 500px) {
+  .valik-pilts {
+    justify-content: space-between;
+  }
+  .valik-pilt img {
+    width: 40px;
+  }
+}
