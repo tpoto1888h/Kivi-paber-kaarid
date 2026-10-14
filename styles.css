@@ -19,7 +19,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  max-width: 35px;
+  max-width: 750px;
   width: 100%;
   padding: 2rem 5rem;
   border-radius: 14px;
@@ -69,7 +69,7 @@ body {
 .tulemus {
   text-align: center;
   font-size: 2rem;
-  color: #181817;
+  color: #1e3c9e;
   margin: 1.5rem 0;
 }
 
@@ -97,36 +97,22 @@ body {
   cursor: pointer;
   transition: opacity 0.3s ease;
 }
+
 .valik-pilt:hover {
   opacity: 1;
 }
+
 .valik-pilt.active {
   opacity: 1;
 }
+
 .valik-pilt img {
   pointer-events: none;
 }
+
 .valik-pilt p {
-  color: #7d2ae8;
+  color: #464747;
   font-size: 1.235rem;
   margin-top: 1rem;
   pointer-events: none;
-}
-/* Responsive media query code for small devices */
-@media (max-width: 768px) {
-  .container {
-    padding: 2rem;
-  }
-  .result_images img {
-    width: 80px;
-  }
-}
-/* Responsive media query code for small devices */
-@media (max-width: 500px) {
-  .valik-pilts {
-    justify-content: space-between;
-  }
-  .valik-pilt img {
-    width: 40px;
-  }
 }
