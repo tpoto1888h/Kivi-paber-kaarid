@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="et">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,36 +10,44 @@
   
   <body>
     <section class="container">
+      <h1>Kivi, paber, käärid</h1>
+      <p class="mangu-juhis">Vali käik: kivi võidab käärid, käärid paberi ja paber kivi.</p>
+
       <!-- Tulemuste näitamise sektsioon -->
       <div class="tulemuse-väli">
         <!-- Kasutaja ja boti tulemuse pildid -->
         <div class="tulemuse-pildid">
           <span class="kasutaja-tulemus">
-            <img src="images/scissors.png" alt="User's valik image" />
+            <img src="images/scissors.png" alt="Kasutaja valik pilt" />
           </span>
           <span class="boti-tulemus">
-            <img src="images/scissors.png" alt="Bot's valik image" />
+            <img src="images/scissors.png" alt="Boti valik pilt" />
           </span>
         </div>
         <!-- Kuva mängutulemuse teave -->
-        <div class="tulemus">Alusta mängu</div>
+        <div class="tulemus" aria-live="polite">Vali kivi, paber või käärid.</div>
+        <div class="skoor" aria-live="polite">
+          <p>Sina: <span id="kasutaja-skoor">0</span></p>
+          <p>Arvuti: <span id="boti-skoor">0</span></p>
+        </div>
       </div>
 
       <!-- Valikud kasutajale -->
       <div class="valik-pildid">
-        <span class="valik-pilt">
+        <button class="valik-pilt" type="button" aria-label="Vali kivi">
           <img src="images/rock.png" alt="Kivi pilt" />
           <p>Kivi</p>
-        </span>
-        <span class="valik-pilt">
+        </button>
+        <button class="valik-pilt" type="button" aria-label="Vali paber">
           <img src="images/paper.png" alt="Paberi pilt" />
           <p>Paber</p>
-        </span>
-        <span class="valik-pilt">
+        </button>
+        <button class="valik-pilt" type="button" aria-label="Vali käärid">
           <img src="images/scissors.png" alt="Käärid pilt" />
           <p>Käärid</p>
-        </span>
+        </button>
       </div>
+      <button class="uuesti-alusta" id="uuesti-alusta" type="button">Alusta uuesti</button>
       
     </section>
     <script src="script.js" defer></script>

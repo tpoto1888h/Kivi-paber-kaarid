@@ -27,6 +27,18 @@ body {
   box-shadow: 0 5px 10px #c7c4c41a;
 }
 
+.container h1 {
+  color: #1e3c9e;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.mangu-juhis {
+  margin: 0.75rem 0 1.5rem;
+  color: #1e3c9e;
+  text-align: center;
+}
+
 .tulemuse-pildid {
   display: flex;
   gap: 7rem;
@@ -73,6 +85,35 @@ body {
   margin: 1.5rem 0;
 }
 
+.skoor {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  color: #1e3c9e;
+  font-size: 1.1rem;
+}
+
+.uuesti-alusta {
+  align-self: center;
+  margin-top: 1.5rem;
+  padding: 0.65rem 1rem;
+  border: 0;
+  border-radius: 4px;
+  background: #1e3c9e;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.uuesti-alusta:hover:not(:disabled) {
+  background: #21177b;
+}
+
+.uuesti-alusta:disabled {
+  cursor: wait;
+  opacity: 0.6;
+}
+
 .valik-pilt img {
   width: 50px;
 }
@@ -93,6 +134,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 0;
+  background: transparent;
+  font: inherit;
   opacity: 0.5;
   cursor: pointer;
   transition: opacity 0.3s ease;
@@ -111,8 +155,10 @@ body {
 }
 
 .valik-pilt p {
-  color: #464747;
+  color: #1e3c9e;
   font-size: 1.235rem;
   margin-top: 1rem;
   pointer-events: none;
 }
+
+
