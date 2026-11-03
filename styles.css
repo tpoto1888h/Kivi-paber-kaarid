@@ -22,21 +22,21 @@ body {
   max-width: 750px;
   width: 100%;
   padding: 2rem 5rem;
-  border-radius: 14px;
   background: #fff;
-  box-shadow: 0 5px 10px #c7c4c41a;
+  border: 5px solid #38b6ff;
 }
 
 .container h1 {
-  color: #1e3c9e;
+  color: #1348d0;
   text-align: center;
   font-size: 1.8rem;
 }
 
 .mangu-juhis {
   margin: 0.75rem 0 1.5rem;
-  color: #1e3c9e;
+  color: #1348d0;
   text-align: center;
+  font-size: 1.3rem;
 }
 
 .tulemuse-pildid {
@@ -51,7 +51,7 @@ body {
 }
 
 @keyframes usershake {
-    50% {
+   50%{
         transform: rotate(10deg)
     }
 }
@@ -81,7 +81,7 @@ body {
 .tulemus {
   text-align: center;
   font-size: 2rem;
-  color: #1e3c9e;
+  color: #1348d0;
   margin: 1.5rem 0;
 }
 
@@ -89,8 +89,8 @@ body {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  color: #1e3c9e;
-  font-size: 1.1rem;
+  color: #1348d0;
+  font-size: 1.3rem;
 }
 
 .uuesti-alusta {
@@ -99,7 +99,7 @@ body {
   padding: 0.65rem 1rem;
   border: 0;
   border-radius: 4px;
-  background: #1e3c9e;
+  background: #1348d0;
   color: #fff;
   font-size: 1rem;
   cursor: pointer;
@@ -136,7 +136,6 @@ body {
   align-items: center;
   border: 0;
   background: transparent;
-  font: inherit;
   opacity: 0.5;
   cursor: pointer;
   transition: opacity 0.3s ease;
@@ -155,8 +154,8 @@ body {
 }
 
 .valik-pilt p {
-  color: #1e3c9e;
-  font-size: 1.235rem;
+  color: #1348d0;
+  font-size: 1.25rem;
   margin-top: 1rem;
   pointer-events: none;
 }
